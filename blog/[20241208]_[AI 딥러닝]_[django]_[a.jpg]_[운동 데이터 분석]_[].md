@@ -248,7 +248,7 @@ color_index=1)
     result = data.groupby(x).size().rename('count').reset_index()
     return result
 
-![성별](img/gender.png)
+![성별](../img/ai/gender.png)
 
 
 ### 산점도를 생성하여 데이터를 시각화
