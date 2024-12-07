@@ -256,7 +256,7 @@ color_index=1)
 
 ![숙련도](img/ai/level.png)
 
-![몸무게](img/ai/kg/png)
+![몸무게](img/ai/kg.png)
 
 ![시간](img/ai/duration.png)
 
