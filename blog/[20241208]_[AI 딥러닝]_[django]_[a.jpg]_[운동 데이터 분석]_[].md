@@ -250,6 +250,18 @@ color_index=1)
 
 ![성별](img/ai/gender.png)
 
+![운동종류](img/ai/type.png)
+
+![빈도](img/ai/freque.png)
+
+![숙련도](img/ai/level.png)
+
+![몸무게](img/ai/kg/png)
+
+![시간](img/ai/duration.png)
+
+![칼로리소모](img/ai/calories.png)
+
 
 ### 산점도를 생성하여 데이터를 시각화
 
@@ -276,6 +288,23 @@ height=400):  # Reduced dimensions
     '#FFB6C1', '#FF1493',
     '#32CD32', '#00CED1', '#1E90FF', '#FFFF00', '#7CFC00'
  ]
+
+![나이](img/ai/age.png)
+
+![키](img/ai/height.png)
+
+![최고심박수](img/ai/bpm.png)
+
+![평균심박수](img/ai/avebpm.png)
+
+![세션](img/ai/session.png)
+
+![휴식](img/ai/resting.png)
+
+![지방](img/ai/fat.png)
+
+![물섭취량](img/ai/water.png)
+
 
 ### 반복 처리를 통한 모든 열에 대해 시각화
 
