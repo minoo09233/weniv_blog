@@ -244,6 +244,30 @@ for x in cat_columns:
     univariateAnalysis_category(x)
 ```
 
+#### Distribution of Gender
+
+![gender2](img/ai/gender2.png)
+![gender](img/ai/gender.png)
+
+
+#### Distribution of Workout_Type
+
+![type](img/ai/type.png)
+![type2](img/ai/type2.png)
+
+
+#### Distribution of Workout_Freque
+
+![freque](img/ai/freque.png)
+![freque2](img/ai/freque2.png)
+
+
+#### Distribution of Experience_Level
+
+![level](img/ai/level.png)
+![level2](img/ai/level2.png)
+
+
 연속형 데이터의 히스토그램 시각화
 
 ```python
