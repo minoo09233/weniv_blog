@@ -60,7 +60,7 @@
 
 matplotlib는 파이썬의 라이브러리 중 하나로 데이터를 그래프로 표현하기 위해서 사용된다. 여러 가지 형식의 그래프 생성이 가능하지만 지금은 matplotlib를 사용한 산점도 생성에 대해서 알아보겠다. 아래의 코드는 matplotlib.pyplot as plt로 가져온 matplotlib를 활용하여 무작위의 산점도 그래프를 만드는 예시이다.
 
-'''python
+```python
 #딕셔너리 data를 생성하며, 'a' 키에 0부터 49까지의 정수 배열을 저장, 'c' 키에 0부터 49 사이의 정수 50개를 랜덤하게 생성해 저장하는데 이 값은 산점도의 색상(color)을 결정함. d' 키에 평균이 0이고 표준편차가 1인 정규분포에서 50개의 랜덤 숫자를 생성해 저장함
 data = {'a': np.arange(50),
         'c': np.random.randint(0, 50, 50),
@@ -73,6 +73,54 @@ plt.scatter('a', 'b', c='c', s='d', data=data) #그래프의 x축을 a로 y축�
 plt.xlabel('entry a') #x축: 0부터 49까지의 정수 값'a'.
 plt.ylabel('entry b') #y축: 'a' 값에 랜덤 노이즈를 더한 값'b'.
 plt.show()
-'''
+```
+이러한 산점도 그래프는 주로 데이터 값의 분포를 시각화하기 위해서 사용된다. 
 
-이러한 산점도 그래프는 주로 데이터 값의 분포를 시각화하기 위해서 사용된다
+
+### 시각화 라이브러리를 사용한 데이터 셋 표시
+
+이 프로젝트는 위의 matplotlib처럼 데이터를 시각화하는 라이브러리를 사용하여 데이터 셋을 표시하는 방식으로 사용하여 이를 바탕으로 데이터 셋을 분석 및 평가하는데 중점을 두었다.
+
+
+### 4.Code Analysis
+
+#### 실행 환경
+
+프로세서: Intel(R) Core(TM) Ultra 5 125H 3.60 GHz
+
+설치된RAM: 16.0GB
+
+운영 체제: Windows 11 64bit
+
+#### 사용된 라이브러
+
+numpy: 계산 및 배열 처리를 위한 라이브러리
+
+pandas:데이터 분석을 위한 라이브러리
+
+seaborn, matplotlib:그래프 사용을 위한 시각화 라이브러리, 데이터의 통계를 시각적으로 나타내기 위해서 사용함.
+
+plotly.graph_objects:세부적인 그래프 생성을 위해 사용.
+
+plotly.express:산점도, 막대그래프, 선 그래프 등을 쉽게 그리기 위해 사용.
+
+warnings:파이썬 실행 중 발생하는 경고 메시지를 처리
+
+#### Code
+
+라이브러리 가져오기
+
+```python
+import numpy as np                       #numpy라이브러리를 np라는 이름으로 불러오기
+import pandas as pd                      #pandas라이브러리를 pd라는 이름으로 불러오기
+
+import seaborn as sns                    #seaborn라이브러리를 sns라는 이름으로 불러오기
+import matplotlib.pyplot as plt          #matplotlib.pyplot라이브러리를 plt라는 이름으로 불러옴
+import plotly.graph_objects as go        #plotly.graph_objects를 go라는 이름으로 불러옴
+import plotly.express as px              #plotly.express라이브러리를 px라는 이름으로 불러옴
+
+from warnings import filterwarnings      #warnings에서 filterwarnings명령어를 불러옴
+filterwarnings('ignore')                 #오류 메시지를 무시하도록 설정
+```
+
+데이터 프레임 할당
