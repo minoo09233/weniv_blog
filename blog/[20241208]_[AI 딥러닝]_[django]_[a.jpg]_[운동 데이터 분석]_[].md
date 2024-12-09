@@ -135,10 +135,13 @@ df = pd.read_csv("/content/dataset/gym_members_exercise_tracking.csv") #정해�
 df.sample(5)  #데이터프레임에서 임의의 샘플을 5개 추출함
 ```
 
+![out3](img/ai/out3.png)
+
 ```python
 num_records = len(df) #데이터프레임의 크기를 num_records에 할당함
 num_records           #크기 출력하기
 ```
+973
 
 
 데이터 프레임 요약
@@ -162,13 +165,22 @@ def summary(df):
 summary(df).style.background_gradient()               #반환된 데이터프레임에 그래디언트 색상을 적용해 강조효과를 줌
 ```
 
+![out4](img/ai/out4.png)
+
+
 ```python
 df.info()                                             #크기, 열 이름, 데이터 타입, 결측값 여부 등을 확인
 ```
 
+![out7](img/ai/out7.png)
+
+
 ```python
 df.nunique()                                          #고유 값 (중복을 제거한 유일한 값들의 집합) 개수를 계산
 ```
+
+![out8](img/ai/out8.png)
+
 
 범주형 데이터의 단변량 분석
 
