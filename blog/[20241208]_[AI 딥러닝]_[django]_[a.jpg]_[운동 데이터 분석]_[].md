@@ -318,18 +318,35 @@ for i, feature in enumerate(features):
     create_scatter_plot(grouped_data, feature, 'count', f'{feature} Distribution', feature, 'Count', color[i])
     print("\n\n\n")
 ```
+#### Age Distribution
 
 ![age](ai/age.png)
 
+#### Height (m) Distrubution
+
 ![height](ai/height.png)
+
+#### Max_BPM Distribution
 
 ![maxbpm](ai/bpm.png)
 
+#### Avg_BPM Distribution
+
 ![avgbpm](ai/avebpm.png)
+
+#### Session_Duration (hours) Distribution
 
 ![session](ai/session.png)
 
+#### Resting_BPM Distribution
+
 ![rest](ai/resting.png)
+
+#### Fat_Percentage Distribution
+
+![fat](ai/fat.png)
+
+#### Water_Intake (liters) Distribution
 
 ![water](ai/water.png)
 
