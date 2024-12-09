@@ -276,6 +276,19 @@ create_histplot(df, 'Session_Duration (hours)', 'Session_Duration (hours)', nbin
 create_histplot(df, 'Calories_Burned', 'Calories_Burned', nbins=50, color_index=2)
 ```
 
+#### Weight (kg) Distribution
+
+![weight](img/ai/weight.png)
+
+#### Session_Duration (hours) Distribution
+
+![sessionn](img/ai/sessionn.png)
+
+#### Calories_Burned Distribution
+
+![calories](img/ai/calories.png)
+
+
 그룹별 데이터 분포 시각화
 ```python
 import plotly.express as px
@@ -320,35 +333,35 @@ for i, feature in enumerate(features):
 ```
 #### Age Distribution
 
-![age](ai/age.png)
+![age](img/ai/age.png)
 
 #### Height (m) Distrubution
 
-![height](ai/height.png)
+![height](img/ai/height.png)
 
 #### Max_BPM Distribution
 
-![maxbpm](ai/bpm.png)
+![maxbpm](img/ai/bpm.png)
 
 #### Avg_BPM Distribution
 
-![avgbpm](ai/avebpm.png)
+![avgbpm](img/ai/avebpm.png)
 
 #### Session_Duration (hours) Distribution
 
-![session](ai/session.png)
+![session](img/ai/session.png)
 
 #### Resting_BPM Distribution
 
-![rest](ai/resting.png)
+![rest](img/ai/resting.png)
 
 #### Fat_Percentage Distribution
 
-![fat](ai/fat.png)
+![fat](img/ai/fat.png)
 
 #### Water_Intake (liters) Distribution
 
-![water](ai/water.png)
+![water](img/ai/water.png)
 
 
 
