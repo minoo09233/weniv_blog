@@ -140,6 +140,7 @@ num_records = len(df) #데이터프레임의 크기를 num_records에 할당함
 num_records           #크기 출력하기
 ```
 
+
 데이터 프레임 요약
 
 ```python
@@ -318,6 +319,22 @@ for i, feature in enumerate(features):
     print("\n\n\n")
 ```
 
+![age](ai/age.png)
+
+![height](ai/height.png)
+
+![maxbpm](ai/bpm.png)
+
+![avgbpm](ai/avebpm.png)
+
+![session](ai/session.png)
+
+![rest](ai/resting.png)
+
+![water](ai/water.png)
+
+
+
 상관 관계 행렬 시각화
 ```python
 numeric_df = df.select_dtypes(include=['number'])      #데이터프레임에서 숫자형 (정수형 및 실수형) 데이터만 선택
@@ -326,6 +343,9 @@ fig = go.Figure(data=go.Heatmap(z=correlation_matrix, x=correlation_matrix.colum
 fig.update_layout(title='Correlation Heatmap') #제목을 정함
 fig.show() #출력
 ```
+
+![33](img/55.png)
+
 
 진한 색상: 강한 상관 관계 (양의 상관 관계는 따뜻한 색, 음의 상관 관계는 차가운 색).
 
