@@ -447,3 +447,7 @@ https://limhm4907.tistory.com/240
 https://blog.naver.com/medicalstatistics/223386270063
 
 https://matplotlib.org/stable/tutorials/pyplot.html
+
+### 7. Youtube Link
+
+https://youtu.be/LVit_j9zbLo?si=jC2K053LJD0xte6u
